@@ -1,0 +1,22 @@
+# Asks the user for their inputs
+
+from datetime import datetime
+event_title = input("Enter event title: ")
+input_year = int(input("Enter year: "))
+input_month = int(input("Enter month: "))
+input_day = int(input("Enter day: "))
+
+input_date = datetime(input_year, input_month, input_day)
+formatted_date = f"{input_date.strftime('%B')} {input_date.day}, {input_date.year}"
+input_weekday = input_date.strftime("%A")
+month_s = ['', 'January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+
+# Prints the formatted outputs
+print()
+print("Formatted Output: ")
+print("Event: ", event_title.upper())
+print("Date: ", formatted_date)
+print("Year: ", input_year)
+print("Month: ", month_s[input_month])
+print("Day: ", input_day)
+print("Weekday: ", input_weekday)
