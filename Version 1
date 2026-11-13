@@ -1,0 +1,17 @@
+# Asks the user for their inputs
+
+from datetime import datetime
+event_title = input("Enter event title: ")
+input_year = input("Enter year: "))
+input_month = input("Enter month: "))
+input_day = input("Enter day: "))
+
+# Prints the formatted outputs
+print()
+print("Formatted Output: ")
+print("Event: ", event_title)
+print("Date: ",)
+print("Year: ", input_year)
+print("Month: ",)
+print("Day: ", input_day)
+print("Weekday: ",)
